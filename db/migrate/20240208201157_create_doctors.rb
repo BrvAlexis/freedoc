@@ -6,6 +6,7 @@ class CreateDoctors < ActiveRecord::Migration[7.1]
       t.string :specialty
       t.string :zip_code
       t.references :appointment, foreign_key: true
+      t.references :city, foreign_key: true
 
       t.timestamps
     end
